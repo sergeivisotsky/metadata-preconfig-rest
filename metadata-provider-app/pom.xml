@@ -16,7 +16,6 @@
         <dependency>
             <groupId>io.github.sergeivisotsky.metadata</groupId>
             <artifactId>metadata-selector</artifactId>
-            <version>${metadata-provider.version}</version>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
