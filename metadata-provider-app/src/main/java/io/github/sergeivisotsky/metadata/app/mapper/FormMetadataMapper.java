@@ -35,7 +35,8 @@ public class FormMetadataMapper implements MetadataMapper<ResultSet, FormMetadat
 
     @Override
     public String getSql() {
-        return "SELECT fm.form_name,\n" +
+        return "SELECT fm.id,\n" +
+                "       fm.form_name,\n" +
                 "       fm.cardinality,\n" +
                 "       fm.language,\n" +
                 "       fm.offset,\n" +
