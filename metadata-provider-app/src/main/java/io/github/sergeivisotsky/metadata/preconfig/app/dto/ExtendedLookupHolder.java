@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package io.github.sergeivisotsky.metadata.app.dto;
+package io.github.sergeivisotsky.metadata.preconfig.app.dto;
 
-import io.github.sergeivisotsky.metadata.selector.dto.LookupMetadata;
+import io.github.sergeivisotsky.metadata.selector.dto.LookupHolder;
 
 /**
  * @author Sergei Visotsky
  */
-public class ExtendedLookupMetadata extends LookupMetadata {
+public class ExtendedLookupHolder extends LookupHolder {
 }

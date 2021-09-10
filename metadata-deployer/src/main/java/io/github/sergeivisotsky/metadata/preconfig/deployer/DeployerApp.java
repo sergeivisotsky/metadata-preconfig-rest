@@ -14,12 +14,18 @@
  * limitations under the License.
  */
 
-package io.github.sergeivisotsky.metadata.app.dto;
+package io.github.sergeivisotsky.metadata.preconfig.deployer;
 
-import io.github.sergeivisotsky.metadata.selector.dto.LookupHolder;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author Sergei Visotsky
  */
-public class ExtendedLookupHolder extends LookupHolder {
+@SpringBootApplication
+public class DeployerApp {
+
+    public static void main(String[] args) {
+        SpringApplication.run(DeployerApp.class, args);
+    }
 }

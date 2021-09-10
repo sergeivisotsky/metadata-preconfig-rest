@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package io.github.sergeivisotsky.metadata.app.mapper;
+package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Locale;
 
-import io.github.sergeivisotsky.metadata.app.dto.ExtendedFormMetadata;
+import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedFormMetadata;
 import io.github.sergeivisotsky.metadata.selector.MetadataMapper;
 import io.github.sergeivisotsky.metadata.selector.dto.FormMetadata;
 import io.github.sergeivisotsky.metadata.selector.dto.Language;

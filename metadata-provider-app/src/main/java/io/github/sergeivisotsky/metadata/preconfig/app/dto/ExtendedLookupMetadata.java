@@ -14,19 +14,12 @@
  * limitations under the License.
  */
 
-package io.github.sergeivisotsky.metadata.app;
+package io.github.sergeivisotsky.metadata.preconfig.app.dto;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration;
+import io.github.sergeivisotsky.metadata.selector.dto.LookupMetadata;
 
 /**
  * @author Sergei Visotsky
  */
-@SpringBootApplication
-public class MetadataApp {
-
-    public static void main(String[] args) {
-        SpringApplication.run(MetadataApp.class, args);
-    }
+public class ExtendedLookupMetadata extends LookupMetadata {
 }

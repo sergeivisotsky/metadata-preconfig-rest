@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package io.github.sergeivisotsky.metadata.app.mapper;
+package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import io.github.sergeivisotsky.metadata.app.dto.ExtendedLookupMetadata;
+import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedLookupMetadata;
 import io.github.sergeivisotsky.metadata.selector.MetadataMapper;
 import io.github.sergeivisotsky.metadata.selector.dto.LookupMetadata;
 import org.springframework.stereotype.Component;

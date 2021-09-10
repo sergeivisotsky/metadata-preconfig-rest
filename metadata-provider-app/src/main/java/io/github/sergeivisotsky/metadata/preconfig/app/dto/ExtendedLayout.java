@@ -14,24 +14,12 @@
  * limitations under the License.
  */
 
-package io.github.sergeivisotsky.metadata.app.config;
+package io.github.sergeivisotsky.metadata.preconfig.app.dto;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
+import io.github.sergeivisotsky.metadata.selector.dto.Layout;
 
 /**
  * @author Sergei Visotsky
  */
-@Configuration
-public class AppConfig {
-
-    @Bean
-    @Primary
-    public Jackson2ObjectMapperBuilder jacksonBuilder() {
-        Jackson2ObjectMapperBuilder builder = new Jackson2ObjectMapperBuilder();
-        builder.failOnEmptyBeans(false);
-        return builder;
-    }
+public class ExtendedLayout extends Layout {
 }

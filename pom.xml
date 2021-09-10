@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.sergeivisotsky.metadata.demo</groupId>
+    <groupId>io.github.sergeivisotsky.metadata.preconfig</groupId>
     <version>0.1-SNAPSHOT</version>
-    <artifactId>metadata-demo-parent</artifactId>
+    <artifactId>metadata-preconfig-parent</artifactId>
     <packaging>pom</packaging>
 
     <modules>

@@ -14,22 +14,18 @@
  * limitations under the License.
  */
 
-package io.github.sergeivisotsky.metadata.app.dto;
+package io.github.sergeivisotsky.metadata.preconfig.app;
 
-import io.github.sergeivisotsky.metadata.selector.dto.FormMetadata;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author Sergei Visotsky
  */
-public class ExtendedFormMetadata extends FormMetadata {
+@SpringBootApplication
+public class MetadataApp {
 
-    private String facet;
-
-    public String getFacet() {
-        return facet;
-    }
-
-    public void setFacet(String facet) {
-        this.facet = facet;
+    public static void main(String[] args) {
+        SpringApplication.run(MetadataApp.class, args);
     }
 }

@@ -1,2 +1,2 @@
-# metadata-provider-demo
-Metadata provider demo application to easily get started
+# metadata-provider-preconfig
+Metadata provider preconfigured application to get started.

@@ -1,9 +1,9 @@
-package io.github.sergeivisotsky.metadata.app.mapper;
+package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import io.github.sergeivisotsky.metadata.app.dto.ExtendedComboBox;
+import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedComboBox;
 import io.github.sergeivisotsky.metadata.selector.MetadataMapper;
 import io.github.sergeivisotsky.metadata.selector.dto.ComboBox;
 import org.springframework.stereotype.Component;
