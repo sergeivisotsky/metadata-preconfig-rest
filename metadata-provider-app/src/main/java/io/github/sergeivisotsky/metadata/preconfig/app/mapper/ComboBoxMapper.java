@@ -4,15 +4,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedComboBox;
-import io.github.sergeivisotsky.metadata.selector.MetadataMapper;
 import io.github.sergeivisotsky.metadata.selector.dto.ComboBox;
+import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 import org.springframework.stereotype.Component;
 
 /**
  * @author Sergei Visotsky
  */
 @Component
-public class ComboBoxMapper implements MetadataMapper<ResultSet, ComboBox> {
+public class ComboBoxMapper implements MetadataMapper<ComboBox> {
 
     @Override
     public String getSql() {
@@ -34,7 +34,7 @@ public class ComboBoxMapper implements MetadataMapper<ResultSet, ComboBox> {
     }
 
     @Override
-    public ComboBox apply(ResultSet rs) {
+    public ComboBox map(ResultSet rs) {
         try {
             ExtendedComboBox comboBox = new ExtendedComboBox();
             comboBox.setId(rs.getLong("id"));

@@ -20,15 +20,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedLookupHolder;
-import io.github.sergeivisotsky.metadata.selector.MetadataMapper;
 import io.github.sergeivisotsky.metadata.selector.dto.LookupHolder;
+import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 import org.springframework.stereotype.Component;
 
 /**
  * @author Sergei Visotsky
  */
 @Component
-public class LookupHolderMapper implements MetadataMapper<ResultSet, LookupHolder> {
+public class LookupHolderMapper implements MetadataMapper<LookupHolder> {
 
     @Override
     public String getSql() {
@@ -41,7 +41,7 @@ public class LookupHolderMapper implements MetadataMapper<ResultSet, LookupHolde
     }
 
     @Override
-    public ExtendedLookupHolder apply(ResultSet rs) {
+    public ExtendedLookupHolder map(ResultSet rs) {
         try {
             ExtendedLookupHolder holder = new ExtendedLookupHolder();
 

@@ -21,17 +21,17 @@ import java.sql.SQLException;
 import java.util.Locale;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedFormMetadata;
-import io.github.sergeivisotsky.metadata.selector.MetadataMapper;
 import io.github.sergeivisotsky.metadata.selector.dto.FormMetadata;
 import io.github.sergeivisotsky.metadata.selector.dto.Language;
 import io.github.sergeivisotsky.metadata.selector.dto.ViewField;
+import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 import org.springframework.stereotype.Component;
 
 /**
  * @author Sergei Visotsky
  */
 @Component
-public class FormMetadataMapper implements MetadataMapper<ResultSet, FormMetadata> {
+public class FormMetadataMapper implements MetadataMapper<FormMetadata> {
 
     @Override
     public String getSql() {
@@ -54,7 +54,7 @@ public class FormMetadataMapper implements MetadataMapper<ResultSet, FormMetadat
     }
 
     @Override
-    public ExtendedFormMetadata apply(ResultSet rs) {
+    public ExtendedFormMetadata map(ResultSet rs) {
         try {
             ExtendedFormMetadata metadata = new ExtendedFormMetadata();
             metadata.setFormName(rs.getString("form_name"));

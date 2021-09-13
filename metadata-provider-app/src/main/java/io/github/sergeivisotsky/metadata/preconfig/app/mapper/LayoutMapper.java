@@ -20,16 +20,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedLayout;
-import io.github.sergeivisotsky.metadata.selector.MetadataMapper;
 import io.github.sergeivisotsky.metadata.selector.dto.Area;
 import io.github.sergeivisotsky.metadata.selector.dto.Layout;
+import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 import org.springframework.stereotype.Component;
 
 /**
  * @author Sergei Visotsky
  */
 @Component
-public class LayoutMapper implements MetadataMapper<ResultSet, Layout> {
+public class LayoutMapper implements MetadataMapper<Layout> {
 
     @Override
     public String getSql() {
@@ -43,7 +43,7 @@ public class LayoutMapper implements MetadataMapper<ResultSet, Layout> {
     }
 
     @Override
-    public ExtendedLayout apply(ResultSet rs) {
+    public ExtendedLayout map(ResultSet rs) {
         try {
             ExtendedLayout layout = new ExtendedLayout();
             layout.setFont(rs.getString("font"));
