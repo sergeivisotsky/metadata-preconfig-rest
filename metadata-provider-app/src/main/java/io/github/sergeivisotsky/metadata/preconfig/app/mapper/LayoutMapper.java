@@ -39,7 +39,7 @@ public class LayoutMapper implements MetadataMapper<Layout> {
                 "       l.font,\n" +
                 "       l.font_size\n" +
                 "FROM layout l\n" +
-                "WHERE l.form_name = :formName";
+                "WHERE l.view_name = :viewName";
     }
 
     @Override

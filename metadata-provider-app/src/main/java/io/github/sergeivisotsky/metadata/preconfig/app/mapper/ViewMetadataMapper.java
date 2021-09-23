@@ -20,8 +20,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Locale;
 
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedFormMetadata;
-import io.github.sergeivisotsky.metadata.selector.dto.FormMetadata;
+import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedViewMetadata;
+import io.github.sergeivisotsky.metadata.selector.dto.ViewMetadata;
 import io.github.sergeivisotsky.metadata.selector.dto.Language;
 import io.github.sergeivisotsky.metadata.selector.dto.ViewField;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
@@ -31,12 +31,12 @@ import org.springframework.stereotype.Component;
  * @author Sergei Visotsky
  */
 @Component
-public class FormMetadataMapper implements MetadataMapper<FormMetadata> {
+public class ViewMetadataMapper implements MetadataMapper<ViewMetadata> {
 
     @Override
     public String getSql() {
         return "SELECT fm.id,\n" +
-                "       fm.form_name,\n" +
+                "       fm.view_name,\n" +
                 "       fm.cardinality,\n" +
                 "       fm.language,\n" +
                 "       fm.offset,\n" +
@@ -47,17 +47,17 @@ public class FormMetadataMapper implements MetadataMapper<FormMetadata> {
                 "       fm.facet,\n" +
                 "       vf.enabled_by_default,\n" +
                 "       vf.ui_control\n" +
-                "FROM form_metadata fm\n" +
-                "         LEFT JOIN view_field vf on fm.id = vf.form_metadata_id\n" +
-                "WHERE fm.form_name = :formName\n" +
+                "FROM view_metadata fm\n" +
+                "         LEFT JOIN view_field vf on fm.id = vf.view_metadata_id\n" +
+                "WHERE fm.view_name = :viewName\n" +
                 "  AND fm.language = :lang";
     }
 
     @Override
-    public ExtendedFormMetadata map(ResultSet rs) {
+    public ExtendedViewMetadata map(ResultSet rs) {
         try {
-            ExtendedFormMetadata metadata = new ExtendedFormMetadata();
-            metadata.setFormName(rs.getString("form_name"));
+            ExtendedViewMetadata metadata = new ExtendedViewMetadata();
+            metadata.setViewName(rs.getString("view_name"));
             metadata.setCardinality(rs.getString("cardinality"));
             metadata.setLang(Language.valueOf(rs.getString("language")
                     .toUpperCase(Locale.ROOT)));
@@ -74,7 +74,7 @@ public class FormMetadataMapper implements MetadataMapper<FormMetadata> {
             return metadata;
         } catch (SQLException e) {
             throw new RuntimeException("Unable to get value from ResultSet for Mapper: {}" +
-                    FormMetadataMapper.class.getSimpleName(), e);
+                    ViewMetadataMapper.class.getSimpleName(), e);
         }
     }
 }

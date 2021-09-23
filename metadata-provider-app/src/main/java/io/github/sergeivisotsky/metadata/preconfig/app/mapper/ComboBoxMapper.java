@@ -30,7 +30,7 @@ public class ComboBoxMapper implements MetadataMapper<ComboBox> {
                 "FROM combo_box cb\n" +
                 "         JOIN combo_box_and_content_relation cbacr ON cb.id = cbacr.box_id\n" +
                 "         JOIN combo_box_content cbc ON cbacr.box_content_id = cbc.id\n" +
-                "WHERE cb.form_metadata_id = :formMetadataId";
+                "WHERE cb.view_metadata_id = :viewMetadataId";
     }
 
     @Override
@@ -48,7 +48,7 @@ public class ComboBoxMapper implements MetadataMapper<ComboBox> {
             return comboBox;
         } catch (SQLException e) {
             throw new RuntimeException("Unable to get value from ResultSet for Mapper: {}" +
-                    FormMetadataMapper.class.getSimpleName(), e);
+                    ViewMetadataMapper.class.getSimpleName(), e);
         }
     }
 }
