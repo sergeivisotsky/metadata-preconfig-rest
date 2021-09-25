@@ -18,7 +18,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <spring-boot.version>2.4.4</spring-boot.version>
-        <metadata-provider.version>0.0.10</metadata-provider.version>
+        <metadata-provider.version>0.1.0-SNAPSHOT</metadata-provider.version>
     </properties>
 
     <dependencyManagement>

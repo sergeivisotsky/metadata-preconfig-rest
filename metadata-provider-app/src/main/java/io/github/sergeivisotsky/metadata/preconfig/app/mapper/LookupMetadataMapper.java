@@ -22,12 +22,10 @@ import java.sql.SQLException;
 import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedLookupMetadata;
 import io.github.sergeivisotsky.metadata.selector.dto.LookupMetadata;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
-import org.springframework.stereotype.Component;
 
 /**
  * @author Sergei Visotsky
  */
-@Component
 public class LookupMetadataMapper implements MetadataMapper<LookupMetadata> {
 
     @Override

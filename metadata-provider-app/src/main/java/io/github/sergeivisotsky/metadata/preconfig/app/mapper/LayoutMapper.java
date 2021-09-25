@@ -23,12 +23,10 @@ import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedLayout;
 import io.github.sergeivisotsky.metadata.selector.dto.Area;
 import io.github.sergeivisotsky.metadata.selector.dto.Layout;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
-import org.springframework.stereotype.Component;
 
 /**
  * @author Sergei Visotsky
  */
-@Component
 public class LayoutMapper implements MetadataMapper<Layout> {
 
     @Override

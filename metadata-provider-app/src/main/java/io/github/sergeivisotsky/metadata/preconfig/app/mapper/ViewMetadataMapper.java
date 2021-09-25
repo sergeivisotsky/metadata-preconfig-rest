@@ -21,16 +21,14 @@ import java.sql.SQLException;
 import java.util.Locale;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedViewMetadata;
-import io.github.sergeivisotsky.metadata.selector.dto.ViewMetadata;
 import io.github.sergeivisotsky.metadata.selector.dto.Language;
 import io.github.sergeivisotsky.metadata.selector.dto.ViewField;
+import io.github.sergeivisotsky.metadata.selector.dto.ViewMetadata;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
-import org.springframework.stereotype.Component;
 
 /**
  * @author Sergei Visotsky
  */
-@Component
 public class ViewMetadataMapper implements MetadataMapper<ViewMetadata> {
 
     @Override
