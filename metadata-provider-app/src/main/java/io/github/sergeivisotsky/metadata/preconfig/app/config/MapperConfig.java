@@ -6,6 +6,7 @@ import io.github.sergeivisotsky.metadata.preconfig.app.mapper.ComboBoxMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.FormFieldMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.FormMetadataMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.FormSectionMapper;
+import io.github.sergeivisotsky.metadata.preconfig.app.mapper.FormSectionModelMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.LayoutMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.LookupHolderMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.LookupMetadataMapper;
@@ -21,6 +22,7 @@ import io.github.sergeivisotsky.metadata.selector.dto.form.FormField;
 import io.github.sergeivisotsky.metadata.selector.dto.form.FormMetadata;
 import io.github.sergeivisotsky.metadata.selector.dto.form.FormSection;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
+import io.github.sergeivisotsky.metadata.selector.mapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -75,4 +77,8 @@ public class MapperConfig {
         return new FormMetadataMapper();
     }
 
+    @Bean
+    public ModelMapper<FormSection, FormSection> formSectionModelMapper() {
+        return new FormSectionModelMapper();
+    }
 }

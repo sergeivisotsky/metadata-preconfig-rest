@@ -14,11 +14,13 @@ public class FormSectionMapper implements MetadataMapper<FormSection> {
     public String getSql() {
         return "SELECT fs.id,\n" +
                 "       fs.name,\n" +
+                "       ParentSection.name AS parent_section_name,\n" +
                 "       fs.cardinality,\n" +
                 "       fs.order_in_form,\n" +
                 "       tr.ui_name,\n" +
                 "       tr.ui_description\n" +
                 "FROM form_section fs\n" +
+                "         JOIN form_section ParentSection ON ParentSection.id = fs.parent_section_id\n" +
                 "         JOIN amd_translation tr ON tr.form_name = fs.name\n" +
                 "WHERE fs.name = :formName\n" +
                 "  AND tr.lang = :lang";
@@ -29,6 +31,7 @@ public class FormSectionMapper implements MetadataMapper<FormSection> {
         try {
             ExtendedFormSection formSection = new ExtendedFormSection();
             formSection.setName(rs.getString("name"));
+            formSection.setParentSectionName("parent_section_name");
             formSection.setOrderInForm(rs.getInt("order_in_form"));
             formSection.setCardinality(FormSectionCardinality.valueOf(rs.getString("cardinality")));
             formSection.setUiName(rs.getString("ui_name"));
