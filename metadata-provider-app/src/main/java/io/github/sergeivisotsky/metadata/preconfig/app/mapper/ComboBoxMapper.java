@@ -7,9 +7,6 @@ import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedComboBox;
 import io.github.sergeivisotsky.metadata.selector.dto.ComboBox;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 
-/**
- * @author Sergei Visotsky
- */
 public class ComboBoxMapper implements MetadataMapper<ComboBox> {
 
     @Override

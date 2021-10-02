@@ -26,9 +26,6 @@ import io.github.sergeivisotsky.metadata.selector.mapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @author Sergei Visotsky
- */
 @Configuration
 public class MapperConfig {
 

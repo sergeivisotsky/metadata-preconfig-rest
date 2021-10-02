@@ -26,9 +26,6 @@ import io.github.sergeivisotsky.metadata.selector.dto.ViewField;
 import io.github.sergeivisotsky.metadata.selector.dto.ViewMetadata;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 
-/**
- * @author Sergei Visotsky
- */
 public class ViewMetadataMapper implements MetadataMapper<ViewMetadata> {
 
     @Override

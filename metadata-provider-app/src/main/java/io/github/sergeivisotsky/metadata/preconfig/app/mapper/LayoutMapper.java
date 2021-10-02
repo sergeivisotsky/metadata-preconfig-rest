@@ -24,9 +24,6 @@ import io.github.sergeivisotsky.metadata.selector.dto.Area;
 import io.github.sergeivisotsky.metadata.selector.dto.Layout;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 
-/**
- * @author Sergei Visotsky
- */
 public class LayoutMapper implements MetadataMapper<Layout> {
 
     @Override

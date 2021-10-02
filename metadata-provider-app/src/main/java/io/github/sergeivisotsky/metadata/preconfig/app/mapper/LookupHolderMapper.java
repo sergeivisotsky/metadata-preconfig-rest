@@ -23,9 +23,6 @@ import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedLookupHolder;
 import io.github.sergeivisotsky.metadata.selector.dto.LookupHolder;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 
-/**
- * @author Sergei Visotsky
- */
 public class LookupHolderMapper implements MetadataMapper<LookupHolder> {
 
     @Override

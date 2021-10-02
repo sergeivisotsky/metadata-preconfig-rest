@@ -18,9 +18,6 @@ package io.github.sergeivisotsky.metadata.preconfig.app.dto;
 
 import io.github.sergeivisotsky.metadata.selector.dto.ViewMetadata;
 
-/**
- * @author Sergei Visotsky
- */
 public class ExtendedViewMetadata extends ViewMetadata {
 
     private String facet;

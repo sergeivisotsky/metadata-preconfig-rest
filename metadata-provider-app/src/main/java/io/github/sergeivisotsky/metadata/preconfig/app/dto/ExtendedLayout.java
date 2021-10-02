@@ -18,8 +18,5 @@ package io.github.sergeivisotsky.metadata.preconfig.app.dto;
 
 import io.github.sergeivisotsky.metadata.selector.dto.Layout;
 
-/**
- * @author Sergei Visotsky
- */
 public class ExtendedLayout extends Layout {
 }

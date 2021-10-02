@@ -19,9 +19,6 @@ package io.github.sergeivisotsky.metadata.preconfig.deployer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * @author Sergei Visotsky
- */
 @SpringBootApplication
 public class DeployerApp {
 
