@@ -3,8 +3,8 @@ package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedFormField;
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedLookupInfo;
+import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedFormField;
+import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedLookupInfo;
 import io.github.sergeivisotsky.metadata.selector.dto.form.FieldType;
 import io.github.sergeivisotsky.metadata.selector.dto.form.FormField;
 import io.github.sergeivisotsky.metadata.selector.dto.form.LookupType;

@@ -3,7 +3,7 @@ package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedComboBox;
+import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedComboBox;
 import io.github.sergeivisotsky.metadata.selector.dto.ComboBox;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 

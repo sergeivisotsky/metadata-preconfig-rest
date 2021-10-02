@@ -19,7 +19,7 @@ package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedLookupHolder;
+import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedLookupHolder;
 import io.github.sergeivisotsky.metadata.selector.dto.LookupHolder;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 

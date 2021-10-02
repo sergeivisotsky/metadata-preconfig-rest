@@ -20,7 +20,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Locale;
 
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedViewMetadata;
+import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedViewMetadata;
 import io.github.sergeivisotsky.metadata.selector.dto.Language;
 import io.github.sergeivisotsky.metadata.selector.dto.ViewField;
 import io.github.sergeivisotsky.metadata.selector.dto.ViewMetadata;

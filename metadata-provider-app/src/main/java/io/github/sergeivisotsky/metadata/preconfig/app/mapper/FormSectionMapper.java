@@ -3,7 +3,7 @@ package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedFormSection;
+import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedFormSection;
 import io.github.sergeivisotsky.metadata.selector.dto.form.FormSection;
 import io.github.sergeivisotsky.metadata.selector.dto.form.FormSectionCardinality;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;

@@ -5,8 +5,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedNavigation;
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedNavigationElement;
+import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedNavigation;
+import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedNavigationElement;
 import io.github.sergeivisotsky.metadata.selector.dto.Navigation;
 import io.github.sergeivisotsky.metadata.selector.dto.NavigationElement;
 import io.github.sergeivisotsky.metadata.selector.dto.NavigationType;

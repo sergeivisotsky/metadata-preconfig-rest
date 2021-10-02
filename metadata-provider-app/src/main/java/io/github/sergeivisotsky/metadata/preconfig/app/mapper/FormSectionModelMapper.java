@@ -1,6 +1,6 @@
 package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedFormSection;
+import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedFormSection;
 import io.github.sergeivisotsky.metadata.selector.dto.form.FormSection;
 import io.github.sergeivisotsky.metadata.selector.mapper.ModelMapper;
 

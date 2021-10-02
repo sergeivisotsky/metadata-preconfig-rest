@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package io.github.sergeivisotsky.metadata.preconfig.app.dto;
+package io.github.sergeivisotsky.metadata.preconfig.app.domain;
 
-import io.github.sergeivisotsky.metadata.selector.dto.Layout;
+import io.github.sergeivisotsky.metadata.selector.dto.LookupMetadata;
 
-public class ExtendedLayout extends Layout {
+public class ExtendedLookupMetadata extends LookupMetadata {
 }

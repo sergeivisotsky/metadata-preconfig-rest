@@ -19,7 +19,7 @@ package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import io.github.sergeivisotsky.metadata.preconfig.app.dto.ExtendedLayout;
+import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedLayout;
 import io.github.sergeivisotsky.metadata.selector.dto.Area;
 import io.github.sergeivisotsky.metadata.selector.dto.Layout;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
