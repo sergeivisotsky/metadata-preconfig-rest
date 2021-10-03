@@ -7,9 +7,9 @@ import java.util.List;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedNavigation;
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedNavigationElement;
-import io.github.sergeivisotsky.metadata.selector.dto.Navigation;
-import io.github.sergeivisotsky.metadata.selector.dto.NavigationElement;
-import io.github.sergeivisotsky.metadata.selector.dto.NavigationType;
+import io.github.sergeivisotsky.metadata.selector.domain.Navigation;
+import io.github.sergeivisotsky.metadata.selector.domain.NavigationElement;
+import io.github.sergeivisotsky.metadata.selector.domain.NavigationType;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 
 public class NavigationMapper implements MetadataMapper<List<Navigation>> {

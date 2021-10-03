@@ -16,7 +16,7 @@
 
 package io.github.sergeivisotsky.metadata.preconfig.app.domain;
 
-import io.github.sergeivisotsky.metadata.selector.dto.ViewMetadata;
+import io.github.sergeivisotsky.metadata.selector.domain.ViewMetadata;
 
 public class ExtendedViewMetadata extends ViewMetadata {
 

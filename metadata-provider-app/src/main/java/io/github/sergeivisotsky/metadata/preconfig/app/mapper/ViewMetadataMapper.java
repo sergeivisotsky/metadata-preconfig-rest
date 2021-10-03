@@ -21,9 +21,9 @@ import java.sql.SQLException;
 import java.util.Locale;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedViewMetadata;
-import io.github.sergeivisotsky.metadata.selector.dto.Language;
-import io.github.sergeivisotsky.metadata.selector.dto.ViewField;
-import io.github.sergeivisotsky.metadata.selector.dto.ViewMetadata;
+import io.github.sergeivisotsky.metadata.selector.domain.Language;
+import io.github.sergeivisotsky.metadata.selector.domain.ViewField;
+import io.github.sergeivisotsky.metadata.selector.domain.ViewMetadata;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 
 public class ViewMetadataMapper implements MetadataMapper<ViewMetadata> {

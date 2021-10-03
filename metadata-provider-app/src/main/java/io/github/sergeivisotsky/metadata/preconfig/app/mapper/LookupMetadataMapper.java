@@ -20,7 +20,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedLookupMetadata;
-import io.github.sergeivisotsky.metadata.selector.dto.LookupMetadata;
+import io.github.sergeivisotsky.metadata.selector.domain.LookupMetadata;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 
 public class LookupMetadataMapper implements MetadataMapper<LookupMetadata> {

@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedComboBox;
-import io.github.sergeivisotsky.metadata.selector.dto.ComboBox;
+import io.github.sergeivisotsky.metadata.selector.domain.ComboBox;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 
 public class ComboBoxMapper implements MetadataMapper<ComboBox> {

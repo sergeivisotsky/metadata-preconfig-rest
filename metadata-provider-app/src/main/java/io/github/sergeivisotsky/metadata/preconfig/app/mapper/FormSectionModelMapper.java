@@ -1,7 +1,7 @@
 package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedFormSection;
-import io.github.sergeivisotsky.metadata.selector.dto.form.FormSection;
+import io.github.sergeivisotsky.metadata.selector.domain.form.FormSection;
 import io.github.sergeivisotsky.metadata.selector.mapper.ModelMapper;
 
 public class FormSectionModelMapper implements ModelMapper<FormSection, FormSection> {

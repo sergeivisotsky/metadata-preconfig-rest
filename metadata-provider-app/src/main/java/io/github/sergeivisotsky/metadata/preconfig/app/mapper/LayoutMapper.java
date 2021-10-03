@@ -20,8 +20,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedLayout;
-import io.github.sergeivisotsky.metadata.selector.dto.Area;
-import io.github.sergeivisotsky.metadata.selector.dto.Layout;
+import io.github.sergeivisotsky.metadata.selector.domain.Area;
+import io.github.sergeivisotsky.metadata.selector.domain.Layout;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 
 public class LayoutMapper implements MetadataMapper<Layout> {
