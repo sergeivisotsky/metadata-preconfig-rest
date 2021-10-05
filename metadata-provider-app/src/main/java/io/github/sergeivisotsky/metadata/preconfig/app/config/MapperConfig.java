@@ -2,6 +2,7 @@ package io.github.sergeivisotsky.metadata.preconfig.app.config;
 
 import java.util.List;
 
+import io.github.sergeivisotsky.metadata.preconfig.app.mapper.ChartMetadataMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.ComboBoxMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.FormFieldMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.FormMetadataMapper;
@@ -18,6 +19,7 @@ import io.github.sergeivisotsky.metadata.selector.domain.LookupHolder;
 import io.github.sergeivisotsky.metadata.selector.domain.LookupMetadata;
 import io.github.sergeivisotsky.metadata.selector.domain.Navigation;
 import io.github.sergeivisotsky.metadata.selector.domain.ViewMetadata;
+import io.github.sergeivisotsky.metadata.selector.domain.chart.ChartMetadata;
 import io.github.sergeivisotsky.metadata.selector.domain.form.FormField;
 import io.github.sergeivisotsky.metadata.selector.domain.form.FormMetadata;
 import io.github.sergeivisotsky.metadata.selector.domain.form.FormSection;
@@ -77,5 +79,10 @@ public class MapperConfig {
     @Bean
     public ModelMapper<FormSection, FormSection> formSectionModelMapper() {
         return new FormSectionModelMapper();
+    }
+
+    @Bean
+    public MetadataMapper<ChartMetadata> chartMetadataMetadataMapper() {
+        return new ChartMetadataMapper();
     }
 }
