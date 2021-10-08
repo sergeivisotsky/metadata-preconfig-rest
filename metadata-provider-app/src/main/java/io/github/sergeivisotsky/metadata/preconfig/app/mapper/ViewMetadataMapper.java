@@ -53,7 +53,6 @@ public class ViewMetadataMapper implements MetadataMapper<ViewMetadata> {
         try {
             ExtendedViewMetadata metadata = new ExtendedViewMetadata();
             metadata.setViewName(rs.getString("view_name"));
-            metadata.setCardinality(rs.getString("cardinality"));
             metadata.setLang(Language.valueOf(rs.getString("language")
                     .toUpperCase(Locale.ROOT)));
             metadata.setOffset(rs.getInt("offset"));
