@@ -12,12 +12,14 @@ import io.github.sergeivisotsky.metadata.preconfig.app.mapper.LayoutMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.LookupHolderMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.LookupMetadataMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.NavigationMapper;
+import io.github.sergeivisotsky.metadata.preconfig.app.mapper.ViewFieldMapper;
 import io.github.sergeivisotsky.metadata.preconfig.app.mapper.ViewMetadataMapper;
 import io.github.sergeivisotsky.metadata.selector.domain.ComboBox;
 import io.github.sergeivisotsky.metadata.selector.domain.Layout;
 import io.github.sergeivisotsky.metadata.selector.domain.LookupHolder;
 import io.github.sergeivisotsky.metadata.selector.domain.LookupMetadata;
 import io.github.sergeivisotsky.metadata.selector.domain.Navigation;
+import io.github.sergeivisotsky.metadata.selector.domain.ViewField;
 import io.github.sergeivisotsky.metadata.selector.domain.ViewMetadata;
 import io.github.sergeivisotsky.metadata.selector.domain.chart.ChartMetadata;
 import io.github.sergeivisotsky.metadata.selector.domain.form.FormField;
@@ -84,5 +86,10 @@ public class MapperConfig {
     @Bean
     public MetadataMapper<ChartMetadata> chartMetadataMetadataMapper() {
         return new ChartMetadataMapper();
+    }
+
+    @Bean
+    public MetadataMapper<ViewField> viewFieldMetadataMapper() {
+        return new ViewFieldMapper();
     }
 }

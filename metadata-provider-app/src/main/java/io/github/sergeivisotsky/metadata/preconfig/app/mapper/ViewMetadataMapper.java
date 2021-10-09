@@ -22,7 +22,6 @@ import java.util.Locale;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedViewMetadata;
 import io.github.sergeivisotsky.metadata.selector.domain.Language;
-import io.github.sergeivisotsky.metadata.selector.domain.ViewField;
 import io.github.sergeivisotsky.metadata.selector.domain.ViewMetadata;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 
@@ -32,18 +31,14 @@ public class ViewMetadataMapper implements MetadataMapper<ViewMetadata> {
     public String getSql() {
         return "SELECT fm.id,\n" +
                 "       fm.view_name,\n" +
-                "       fm.cardinality,\n" +
                 "       fm.language,\n" +
                 "       fm.offset,\n" +
                 "       fm.padding,\n" +
                 "       fm.font,\n" +
                 "       fm.font_size,\n" +
                 "       fm.description,\n" +
-                "       fm.facet,\n" +
-                "       vf.enabled_by_default,\n" +
-                "       vf.ui_control\n" +
+                "       fm.facet\n" +
                 "FROM view_metadata fm\n" +
-                "         LEFT JOIN view_field vf on fm.id = vf.view_metadata_id\n" +
                 "WHERE fm.view_name = :viewName\n" +
                 "  AND fm.language = :lang";
     }
@@ -60,10 +55,7 @@ public class ViewMetadataMapper implements MetadataMapper<ViewMetadata> {
             metadata.setFont(rs.getString("font"));
             metadata.setFontSize(rs.getInt("font_size"));
             metadata.setDescription(rs.getString("description"));
-            ViewField viewField = new ViewField();
-            viewField.setEnabledByDefault(rs.getInt("enabled_by_default"));
-            viewField.setUiControl(rs.getString("ui_control"));
-            metadata.setViewField(viewField);
+
             metadata.setFacet(rs.getString("facet"));
             return metadata;
         } catch (SQLException e) {
