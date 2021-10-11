@@ -16,6 +16,8 @@
 
 package io.github.sergeivisotsky.metadata.preconfig.app.config;
 
+import io.github.sergeivisotsky.metadata.selector.sqlgen.PostgreSQLDialect;
+import io.github.sergeivisotsky.metadata.selector.sqlgen.SQLDialect;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -30,5 +32,10 @@ public class AppConfig {
         Jackson2ObjectMapperBuilder builder = new Jackson2ObjectMapperBuilder();
         builder.failOnEmptyBeans(false);
         return builder;
+    }
+
+    @Bean
+    public SQLDialect sqlDialect() {
+        return new PostgreSQLDialect();
     }
 }
