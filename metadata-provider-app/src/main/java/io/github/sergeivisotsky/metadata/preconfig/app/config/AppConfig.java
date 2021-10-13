@@ -16,8 +16,8 @@
 
 package io.github.sergeivisotsky.metadata.preconfig.app.config;
 
-import io.github.sergeivisotsky.metadata.selector.sqlgen.PostgreSQLDialect;
-import io.github.sergeivisotsky.metadata.selector.sqlgen.SQLDialect;
+import io.github.sergeivisotsky.metadata.selector.jdbc.sqlgen.PostgreSQLDialect;
+import io.github.sergeivisotsky.metadata.selector.jdbc.sqlgen.SQLDialect;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;

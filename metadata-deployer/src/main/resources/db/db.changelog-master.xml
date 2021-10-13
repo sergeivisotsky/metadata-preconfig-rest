@@ -7,4 +7,8 @@
     <include file="./db.changelog-core-master.xml" relativeToChangelogFile="true"/>
     <include file="./db.changelog-24-08-2021.xml" relativeToChangelogFile="true"/>
 
+    <!-- custom -->
+    <include file="./db.changelog-custom-schema.xml" relativeToChangelogFile="true"/>
+    <include file="./db.changelog-custom-data.xml" relativeToChangelogFile="true"/>
+
 </databaseChangeLog>
