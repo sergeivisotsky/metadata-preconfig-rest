@@ -31,6 +31,7 @@ public class ViewMetadataMapper implements MetadataMapper<ViewMetadata> {
     public String getSql() {
         return "SELECT fm.id,\n" +
                 "       fm.view_name,\n" +
+                "       fm.definition,\n" +
                 "       fm.language,\n" +
                 "       fm.offset,\n" +
                 "       fm.padding,\n" +
@@ -48,6 +49,7 @@ public class ViewMetadataMapper implements MetadataMapper<ViewMetadata> {
         try {
             ExtendedViewMetadata metadata = new ExtendedViewMetadata();
             metadata.setViewName(rs.getString("view_name"));
+            metadata.setDefinition(rs.getString("definition"));
             metadata.setLang(Language.valueOf(rs.getString("language")
                     .toUpperCase(Locale.ROOT)));
             metadata.setOffset(rs.getInt("offset"));

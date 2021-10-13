@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedFormField;
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedLookupInfo;
-import io.github.sergeivisotsky.metadata.selector.domain.form.FieldType;
+import io.github.sergeivisotsky.metadata.selector.domain.FieldType;
 import io.github.sergeivisotsky.metadata.selector.domain.form.FormField;
 import io.github.sergeivisotsky.metadata.selector.domain.form.LookupType;
 import io.github.sergeivisotsky.metadata.selector.domain.form.UIControlType;
