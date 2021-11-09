@@ -1,5 +1,18 @@
 @echo off
 
-call docker stop db
-call docker rm -f db
-call docker-compose -p db up -d --build
+if "%1" == "all" (
+    call docker stop db metadata-deployer metadata-provider-app
+    call docker rm -f db db metadata-deployer metadata-provider-app
+
+    pushd ..\
+        call mvn clean install -DskipTests -T1C
+    popd
+
+    call docker-compose up -d --build
+)
+
+if "%1" == "images" (
+    call docker stop db metadata-deployer metadata-provider-app
+    call docker rm -f db db metadata-deployer metadata-provider-app
+    call docker-compose up -d --build
+)
