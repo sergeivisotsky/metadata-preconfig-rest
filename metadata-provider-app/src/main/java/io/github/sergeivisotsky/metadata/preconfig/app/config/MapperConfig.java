@@ -27,6 +27,7 @@ import io.github.sergeivisotsky.metadata.selector.domain.form.FormMetadata;
 import io.github.sergeivisotsky.metadata.selector.domain.form.FormSection;
 import io.github.sergeivisotsky.metadata.selector.mapper.MetadataMapper;
 import io.github.sergeivisotsky.metadata.selector.mapper.ModelMapper;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -84,6 +85,8 @@ public class MapperConfig {
     }
 
     @Bean
+    @ConditionalOnProperty(prefix = "metadata.active",
+            name = "chart", havingValue = "true")
     public MetadataMapper<ChartMetadata> chartMetadataMetadataMapper() {
         return new ChartMetadataMapper();
     }
