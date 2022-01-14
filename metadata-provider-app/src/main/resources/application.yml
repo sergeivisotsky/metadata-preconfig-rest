@@ -6,7 +6,7 @@ datasource:
   url: ${DB_URL}
   username: ${DB_USERNAME}
   password: ${DB_PASSWORD}
-  sqlDialect: postgresql
+  sql-dialect: postgresql
 
 cache:
   initialCapacity: 100
