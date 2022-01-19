@@ -18,7 +18,6 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <spring-boot.version>2.6.2</spring-boot.version>
-        <springdoc-openapi-ui.version>1.6.4</springdoc-openapi-ui.version>
         <metadata-provider.version>1.2.0-SNAPSHOT</metadata-provider.version>
     </properties>
 
@@ -37,11 +36,6 @@
                 <version>${metadata-provider.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
-            </dependency>
-            <dependency>
-                <groupId>org.springdoc</groupId>
-                <artifactId>springdoc-openapi-ui</artifactId>
-                <version>${springdoc-openapi-ui.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
