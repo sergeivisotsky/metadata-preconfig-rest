@@ -35,11 +35,11 @@ services:
     networks:
       - metadata_net
 
-  metadata-provider-app:
-    image: metadata/contexts:metadata-provider-app-latest
-    container_name: metadata-provider-app
+  metadata-app:
+    image: metadata/contexts:metadata-app-latest
+    container_name: metadata-app
     build:
-      context: ../metadata-provider-app
+      context: ../metadata-app
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
