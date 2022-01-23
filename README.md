@@ -1,2 +1,2 @@
 # metadata-preconfig
-Metadata provider preconfigured application to get started.
+Metadata preconfigured application to get started.
