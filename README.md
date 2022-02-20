@@ -1,2 +1,2 @@
-# metadata-preconfig
-Metadata preconfigured application to get started.
+# metadata-preconfig-rest
+Metadata preconfigured REST based application to get started.
