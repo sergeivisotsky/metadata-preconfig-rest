@@ -3,6 +3,7 @@ package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import io.github.sergeivisotsky.metadata.engine.exception.MetadataStorageException;
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedChartMetadata;
 import io.github.sergeivisotsky.metadata.engine.domain.chart.ChartMetadata;
 import io.github.sergeivisotsky.metadata.engine.domain.chart.ChartType;
@@ -35,7 +36,7 @@ public class ChartMetadataMapper implements MetadataMapper<ChartMetadata> {
 
             return metadata;
         } catch (SQLException e) {
-            throw new RuntimeException("Unable to get value from ResultSet for Mapper: {}" +
+            throw new MetadataStorageException("Unable to get value from ResultSet for Mapper: {}" +
                     ChartMetadata.class.getSimpleName(), e);
         }
     }

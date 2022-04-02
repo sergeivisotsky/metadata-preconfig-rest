@@ -3,6 +3,7 @@ package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import io.github.sergeivisotsky.metadata.engine.exception.MetadataStorageException;
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedLookupHolder;
 import io.github.sergeivisotsky.metadata.engine.domain.LookupHolder;
 import io.github.sergeivisotsky.metadata.engine.mapper.MetadataMapper;
@@ -30,7 +31,7 @@ public class LookupHolderMapper implements MetadataMapper<LookupHolder> {
 
             return holder;
         } catch (SQLException e) {
-            throw new RuntimeException("Unable to get value from ResultSet for Mapper: {}" +
+            throw new MetadataStorageException("Unable to get value from ResultSet for Mapper: {}" +
                     LookupHolderMapper.class.getSimpleName(), e);
         }
     }

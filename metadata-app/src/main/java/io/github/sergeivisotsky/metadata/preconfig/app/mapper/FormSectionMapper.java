@@ -3,6 +3,7 @@ package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import io.github.sergeivisotsky.metadata.engine.exception.MetadataStorageException;
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedFormSection;
 import io.github.sergeivisotsky.metadata.engine.domain.form.FormSection;
 import io.github.sergeivisotsky.metadata.engine.domain.form.FormSectionCardinality;
@@ -39,7 +40,7 @@ public class FormSectionMapper implements MetadataMapper<FormSection> {
             formSection.setUiDescription(rs.getString("ui_description"));
             return formSection;
         } catch (SQLException e) {
-            throw new RuntimeException("Unable to get value from ResultSet for Mapper: {}" +
+            throw new MetadataStorageException("Unable to get value from ResultSet for Mapper: {}" +
                     FormSectionMapper.class.getSimpleName(), e);
         }
     }

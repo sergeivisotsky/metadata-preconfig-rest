@@ -3,6 +3,7 @@ package io.github.sergeivisotsky.metadata.preconfig.app.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import io.github.sergeivisotsky.metadata.engine.exception.MetadataStorageException;
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedFormField;
 import io.github.sergeivisotsky.metadata.preconfig.app.domain.ExtendedLookupInfo;
 import io.github.sergeivisotsky.metadata.engine.domain.FieldType;
@@ -68,7 +69,7 @@ public class FormFieldMapper implements MetadataMapper<FormField> {
             formField.setUiDescription(rs.getString("ui_description"));
             return formField;
         } catch (SQLException e) {
-            throw new RuntimeException("Unable to get value from ResultSet for Mapper: {}" +
+            throw new MetadataStorageException("Unable to get value from ResultSet for Mapper: {}" +
                     FormFieldMapper.class.getSimpleName(), e);
         }
     }
